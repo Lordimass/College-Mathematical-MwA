@@ -14,7 +14,6 @@ def multiply(a,b):
 		if b[i] % 2 != 0:
 			output += a[i]
 			
-	print("Result is")
 	print(output)
 
 def quad_solve(a,b,c):
@@ -38,7 +37,6 @@ def sqrt(a, rnd):
 		val -= 1
 
 	b = a/val
-	print(".")
 	print(round((val+b)/2,rnd))
 
 def frctnl_sqrt(a,dp): # Only works for values between 0 and 2
@@ -58,7 +56,6 @@ def frctnl_sqrt(a,dp): # Only works for values between 0 and 2
 		change = (x**i) * k
 		newr = oldr + change
 
-	print(".")
 	print(round(newr, dp))
 
 def eulers(dp):
@@ -69,7 +66,6 @@ def eulers(dp):
 		C *= B
 		A += 1/C
 		B += 1
-	print(".")
 	print(f"e is approximately equal to {round(A,dp)}")
 
 eulers(5)
